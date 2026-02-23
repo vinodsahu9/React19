@@ -1,0 +1,37 @@
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+}
+
+/* Desktop: keep sidebar static inside layout */
+@media (min-width: 768px) {
+  .sidebar {
+    position: static;
+    transform: none;
+  }
+}
+
+/* Mobile: hidden by default, slide in when open */
+@media (max-width: 767.98px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease-in-out;
+    z-index: 1050;
+    width: 240px;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1040;
+  }
+}
