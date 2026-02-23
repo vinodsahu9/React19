@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <h1>Hello, React 19! </h1>
-      <p>The sum of 2 and 3 is: {sum(2, 3)}</p>
+      <p>Function: The sum of 2 and 3 is: {sum(2, 3)}</p>
     </>
   );
 }
