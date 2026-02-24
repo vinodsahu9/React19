@@ -1,5 +1,5 @@
 .sidebar {
-  width: 240px;
+  width: 180px;
   min-height: 100vh;
 }
 
@@ -21,7 +21,7 @@
     transform: translateX(-100%);
     transition: transform 0.25s ease-in-out;
     z-index: 1050;
-    width: 240px;
+    width: 180px;
   }
 
   .sidebar.open {
